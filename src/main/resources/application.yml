@@ -1,6 +1,10 @@
 spring:
- datasource:
-  driver-class-name: org.postgresql.Driver
-  url: jdbc:postgresql://localhost:5432/postgres
-  username: postgres
-  password: westside
+  datasource:
+    url: jdbc:postgresql://db:5432/postgres
+    password: westside
+    username: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+

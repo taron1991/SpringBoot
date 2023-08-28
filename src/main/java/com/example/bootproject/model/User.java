@@ -1,12 +1,13 @@
 package com.example.bootproject.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.Data;
 
-import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "users")
+@Table(name = "users1")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -7,6 +7,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/*ENV SPRING_DATASOURCE_URL=jdbc:postgresql://postgresql:5432/postgres
+ENV SPRING_DATASOURCE_USERNAME=postgres
+ENV SPRING_DATASOURCE_PASSWORD=westside*/
+
 @RestController
 @RequestMapping("/user")
 public class UserController {
